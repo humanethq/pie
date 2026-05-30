@@ -317,11 +317,11 @@ The developer declares *what depends on what*, once. PIE handles all propagation
 
 For any derived node $v_j$, read latency under PIE is bounded by the State Store lookup time:
 
-$$T_{\text{read}}^{\text{PIE}} = T_{\text{store\_lookup}} \approx 0.1\text{ms} \quad \text{(in-memory store)}$$
+$$T_{\text{read}}^{\text{PIE}} = T_{\text{store}_{\text{lookup}}} \approx 0.1\text{ms} \quad \text{(in-memory store)}$$
 
 Under a conventional reactive system, the equivalent read incurs:
 
-$$T_{\text{read}}^{\text{reactive}} = T_{\text{db\_query}} + T_{\text{compute}} + T_{\text{serialize}}$$
+$$T_{\text{read}}^{\text{reactive}} = T_{\text{db}_{\text{query}}} + T_{\text{compute}} + T_{\text{serialize}}$$
 
 For a moderately complex derived value (multi-table join + business logic):
 
